@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>RESTAURANT</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./jquery/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <!-- Google Web Fonts -->
+   
+
+</head>
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+            <img src="./img/l1.jpg" class="img-fluid" width="200px">
+
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active" style="letter-spacing: 1px;" id="home">Home</a>
+                <a href="#about" class="nav-item nav-link" style="letter-spacing: 1px;">About</a>
+                <a href="#service" class="nav-item nav-link" style="letter-spacing: 1px; ">Service</a>
+                <a href="#price" class="nav-item nav-link" style="letter-spacing: 1px;">PRICE</a>
+                <a href="#chefs" class="nav-item nav-link" style="letter-spacing: 1px; " >CHEFS</a>
+                <a href="#hours"  class="nav-item nav-link" style="letter-spacing: 1px; ">WORK</a>
+                
+                
+             
+                <a href="#contact" class="nav-item nav-link" style="letter-spacing: 1px;">Contact</a>
+            </div>
+            <a href="https://www.booking.com/articles/tag/restaurants.en-gb.html"  style="font-weight: bold;letter-spacing: 2px;border: 2px solid black;border-radius: 20px;background-color:azure;padding: 10px;text-decoration: none;color: red;" >BOOKING</a>
+  
+            <a href="#signin" class="nav-link" style="font-weight: bold;letter-spacing: 2px;border: 2px solid black;border-radius: 20px;float: right;margin-left: 20px;background-color: greenyellow;padding: 10px;color: red;">SIGN IN</a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="./img/hero-bg.jpg" alt="Image" >
+                    <div class="carousel-caption d-flex align-items-center justify-content-center text-start">
+                        <div class="mx-sm-5 px-5" style="max-width: 900px;">
+                            <h1 class="display-2  text-uppercase mb-4 animated slideInDown" style="font-weight: bold;color:palegreen;">welcome to our RESTAURANTLY </h1>
+                            <h4 class=" text-uppercase mb-4 animated slideInDown" style="font-weight: bold;color:pink;"><i class="fa fa-map-marker-alt  me-3" style="color: red;" ></i>3/55 kozhinchiPatty, Salem, India</h4>
+                            <h4 class=" text-uppercase mb-4 animated slideInDown" style="font-weight: bold;color:pink;"><i class="fa fa-phone-alt  me-3" style="color: red;"></i>+91 9361536356</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="./img/event-custom.jpg" alt="Image">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center text-start">
+                        <div class="mx-sm-5 px-5" style="max-width: 900px;">
+                            <h1 class="display-2  text-uppercase mb-4 animated slideInDown" style="font-weight: bold;color:palegreen;">Luxury Item at Affordable Price</h1>
+                            <h4 class="text-white text-uppercase mb-4 animated slideInDown"><i class="fa fa-map-marker-alt text-primary me-3"></i>3/55 kozhinchiPatty, Salem, India</h4>
+                            <h4 class="text-white text-uppercase mb-4 animated slideInDown"><i class="fa fa-phone-alt text-primary me-3"></i>+91 9361536356</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="./img/gallery-1.jpg" alt="Image">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center text-start">
+                        <div class="mx-sm-5 px-5" style="max-width: 900px;">
+                            <h1 class="display-2 text-white text-uppercase mb-4 animated slideInDown">Luxury Item at Affordable Price</h1>
+                            <h4 class="text-white text-uppercase mb-4 animated slideInDown"><i class="fa fa-map-marker-alt text-primary me-3" style="color:black;"></i>3/55 kozhinchiPatty, Salem, India</h4>
+                            <h4 class="text-white text-uppercase mb-4 animated slideInDown"><i class="fa fa-phone-alt text-primary me-3"></i>+91 9361536356</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="./img/event-private.jpg" alt="Image">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center text-start">
+                        <div class="mx-sm-5 px-5" style="max-width: 900px;">
+                            <h1 class="display-2 t text-uppercase mb-4 animated slideInDown" style="font-weight: bold;color:pink;">Luxury Item at Affordable Price</h1>
+                            <h4 class=" text-uppercase mb-4 animated slideInDown" style="font-weight: bold;color: aqua;"><i class="fa fa-map-marker-alt  me-3" ></i>3/55 kozhinchiPatty, Salem, India</h4>
+                            <h4 class=" text-uppercase mb-4 animated slideInDown" style="font-weight: bold;color: aqua;"><i class="fa fa-phone-alt text-primary me-3"></i>+91 9361536356</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5" id="about">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="d-flex flex-column">
+                        <img class="img-fluid w-75  align-self-end" src="./img/jpg.jpg" alt="">
+                        <div class="w-50 bg-dark p-5" style="margin-top: -25%;">
+                            <h1 class="text-uppercase  mb-3" style="color: palevioletred;font-weight: bold;">25 Years</h1>
+                            <h2 class="text-uppercase mb-0">Experience</h2>
+                        </div>
+                        <div class="yes">
+                            <img src="./img/cake.jpg" style="margin-top: 20px;" width="540px">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <p class="d-inline-block " style="font-size: 40px;font-weight: bold;border:2px solid black;border-radius: 20px;padding: 20px;color: black;">ABOUT US</p>
+                    <h1 class=" mb-4" style="font-size: 20px;font-weight: 500;color:black;">
+                    <img src="./img/r2.jpg" class="img-fluid"></p>
+                    <p class="mb-4" style="font-weight: bold;color: palevioletred;">Share the story of how your restaurant came into existence. Include key milestones, such as when it was founded, who founded it, and any significant events or challenges along the way.</p>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <h3 class="text-uppercase mb-3" style="font-weight: bold;color:aqua;">Since 2000</h3>
+                            <p class="mb-0"><img src="./img/r3.jpg" class="img-fluid"></p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="text-uppercase mb-3" style="font-weight: bold;color: aqua;">1000+ clients</h3>
+                            <p class="mb-0"><img src="./img/r3.jpg" class="img-fluid"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5" id="service">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block" style="font-size: 40px;font-weight: bold;color: black;letter-spacing: 2px;">SERVICES</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item position-relative overflow-hidden bg-dark d-flex h-100 p-5 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                            <img class="img-fluid" src="./img/cake.jpg" height="200px" alt="">
+                        </div>
+                        <div class="ps-4">
+                            <h3 class="text-uppercase mb-3" style="font-weight: bold;color:palevioletred;">CAKE</h3>
+                            <p style="font-weight: bold;color: azure;">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam.</p>
+                            <span class="text-uppercase " style="font-weight: bold;color: aqua;">From ₹500</span>
+                        </div>
+                        <a class="btn btn-square" href="#"><i class="fa fa-plus text-primary"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item position-relative overflow-hidden bg-dark d-flex h-100 p-5 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                            <img class="img-fluid" src="./img/caesar.jpg" alt="">
+                        </div>
+                        <div class="ps-4">
+                            <h3 class="text-uppercase mb-3"  style="font-weight: bold;color:palevioletred;">CAESAR</h3>
+                            <p style="font-weight: bold;color: azure;">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam.</p>
+                            <span class="text-uppercase " style="font-weight: bold;color: aqua;">From ₹700</span>
+                        </div>
+                        <a class="btn btn-square" href="#"><i class="fa fa-plus text-primary"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item position-relative overflow-hidden bg-dark d-flex h-100 p-5 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                            <img class="img-fluid" src="./img/lobster-bisque.jpg" alt="">
+                        </div>
+                        <div class="ps-4">
+                            <h3 class="text-uppercase mb-3"  style="font-weight: bold;color:palevioletred;">LOBSTER</h3>
+                            <p style="font-weight: bold;color: azure;">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam.</p>
+                            <span class="text-uppercase" style="font-weight: bold;color: aqua;">From ₹1000</span>
+                        </div>
+                        <a class="btn btn-square" href="#"><i class="fa fa-plus text-primary"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item position-relative overflow-hidden bg-dark d-flex h-100 p-5 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                            <img class="img-fluid" src="./img/lobster-roll.jpg" alt="">
+                        </div>
+                        <div class="ps-4">
+                            <h3 class="text-uppercase mb-3"  style="font-weight: bold;color:palevioletred;">LOBSTER-ROLL</h3>
+                            <p style="font-weight: bold;color: azure;">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam.</p>
+                            <span class="text-uppercase" style="font-weight: bold;color: aqua;">From ₹1200</span>
+                        </div>
+                        <a class="btn btn-square" href="#"><i class="fa fa-plus text-primary"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item position-relative overflow-hidden bg-dark d-flex h-100 p-5 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                            <img class="img-fluid" src="./img/greek-salad.jpg" alt="">
+                        </div>
+                        <div class="ps-4">
+                            <h3 class="text-uppercase mb-3"  style="font-weight: bold;color:palevioletred;">GREEK-SALAD</h3>
+                            <p style="font-weight: bold;color: azure;">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam.</p>
+                            <span class="text-uppercase " style="font-weight: bold;color: aqua;">From ₹800</span>
+                        </div>
+                        <a class="btn btn-square" href="#"><i class="fa fa-plus text-primary"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item position-relative overflow-hidden bg-dark d-flex h-100 p-5 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                            <img class="img-fluid" src="./img/specials-3.png" alt="">
+                        </div>
+                        <div class="ps-4">
+                            <h3 class="text-uppercase mb-3"  style="font-weight: bold;color:palevioletred;">NOODLES</h3>
+                            <p style="font-weight: bold;color: azure;">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam.</p>
+                            <span class="text-uppercase " style="font-weight: bold;color: aqua;">From ₹250</span>
+                        </div>
+                        <a class="btn btn-square" href="#"><i class="fa fa-plus text-primary"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Price Start -->
+    <h1 id="price" style="color: black;text-align: center;">PRICING PLAN</h1>
+    <div class="container-xxl py-5" id="price">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="bg-dark h-100 d-flex flex-column justify-content-center p-5">
+                        <p class="d-inline-flex   " style="font-size: 40PX;font-weight: BOLD;color:palevioletred;border-radius: 20px;border: 2px solid white;padding: 25px;text-align: center;background-color:beige">PRICE & PLAN</p>
+                        <h1 class="text-uppercase mb-4">Check Out Our Restaurant Services And Prices</h1>
+                        <div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0" style="font-weight: bold;color: aliceblue;">CAKE</h6>
+                                <span class="text-uppercase " style="font-weight: bold;color: aqua;">₹500</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0" style="font-weight: bold;color: aliceblue;">CAESER</h6>
+                                <span class="text-uppercase " style="font-weight: bold;color: aqua;">₹700</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0" style="font-weight: bold;color: aliceblue;">NOODLES</h6>
+                                <span class="text-uppercase " style="font-weight: bold;color: aqua;">₹250</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0" style="font-weight: bold;color: aliceblue;">LOBSTER</h6>
+                                <span class="text-uppercase " style="font-weight: bold;color: aqua;">₹400</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0" style="font-weight: bold;color: aliceblue;">LOBSTER-ROLL</h6>
+                                <span class="text-uppercase " style="font-weight: bold;color: aqua;">₹450</span>
+                            </div>
+                            <div class="d-flex justify-content-between py-2">
+                                <h6 class="text-uppercase mb-0" style="font-weight: bold;color: aliceblue;">CHICKERN-ROLL</h6>
+                                <span class="text-uppercase " style="font-weight: bold;color: aqua;">₹350</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="h-100">
+                        <img class="img-fluid h-100" src="./img/gallery-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Price End -->
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5" id="chefs">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block " style="font-size: 40px;font-weight: bold;letter-spacing: 2px;color: black;">OUR CHEFS</p>
+                <h1 style="font-weight: bold;">MEET OUR CHEFS</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-sm-3 col-md-3 col-12" data-wow-delay="0.1s">
+                    <div class="team-item">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="./img/chefs-1.jpg" height="100%" width="100%" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-square" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-dark text-center p-4">
+                            <h5 class="text-uppercase" style="font-weight: bold;color: aliceblue;">chef Name</h5>
+                            <span  style="font-weight: bold;color:aqua">ROCKY</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid" width="100%"   src="./img/chefs-1.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-square" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-dark text-center p-4">
+                            <h5 class="text-uppercase" style="font-weight: bold;color: aliceblue;">CHEF NAME</h5>
+                            <span  style="font-weight: bold;color:aqua">DILIP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="./img/chefs-3.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-square" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-dark text-center p-4">
+                            <h5 class="text-uppercase" style="font-weight: bold;color: aliceblue;">CHEF NAME</h5>
+                            <span style="font-weight: bold;color:aqua">RONALDO</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="./img/chefs-2.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-square" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-dark text-center p-4">
+                            <h5 class="text-uppercase" style="font-weight: bold;color: aliceblue;">CHEF NAME</h5>
+                            <span style="font-weight: bold;color:aqua">ROSY</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Working Hours Start -->
+    <h1 id="hours" style="font-size: 40PX;font-weight: BOLD;text-align: center;color: black;letter-spacing: 2px;">WORKING HOURS</h1>
+    <div class="container-xxl py-5" id="work">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="h-100">
+                        <img class="img-fluid h-100" src="./img/jpg.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="bg-dark h-100 d-flex flex-column justify-content-center p-5">
+         
+                        <h1 class="text-uppercase mb-4" style="font-weight: bold;color: white;">Professional Restaurant Are Waiting For You</h1>
+                        <div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0" style="font-weight: bold;color:pink;">Monday</h6>
+                                <span class="text-uppercase" style="color: aqua;font-weight: bold;">09 AM - 09 PM</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0" style="font-weight: bold;color:pink;">Tuesday</h6>
+                                <span class="text-uppercase" style="color: aqua;font-weight: bold;">09 AM - 09 PM</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0" style="font-weight: bold;color:pink;">Wednesday</h6>
+                                <span class="text-uppercase" style="color: aqua;font-weight: bold;">09 AM - 09 PM</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0" style="font-weight: bold;color:pink;">Thursday</h6>
+                                <span class="text-uppercase" style="color: aqua;font-weight: bold;">09 AM - 09 PM</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0" style="font-weight: bold;color:pink;">Friday</h6>
+                                <span class="text-uppercase" style="color: aqua;font-weight: bold;">09 AM - 09 PM</span>
+                            </div>
+                            <div class="d-flex justify-content-between py-2">
+                                <h6 class="text-uppercase mb-0" style="font-weight: bold;color:pink;">Sat / Sun</h6>
+                                <span class="text-uppercase" style="color: aqua;font-weight: bold;">09 am - 09 pm</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Working Hours End -->
+
+
+    <!-- Testimonial Start -->
+    <h1 id="contact" style="font-size: 40PX;font-weight: bold;color: black;letter-spacing: 2px;text-align: center;">CONTACT US</h1>
+ <div class="frame">
+    <div class="row mt-2">
+        <div class="col-sm-12 col-md-12 col-12 p-5 mt-5" >
+    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d135351.30584058887!2d78.15506175621584!3d11.672467724162642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x3babf1ccf52cba0b%3A0xee9989007068ca47!2sSalem%2C%20Tamil%20Nadu!3m2!1d11.664325!2d78.1460142!4m5!1s0x3babf1ccf52cba0b%3A0xee9989007068ca47!2sSalem%2C%20Tamil%20Nadu!3m2!1d11.664325!2d78.1460142!5e0!3m2!1sen!2sin!4v1693117950372!5m2!1sen!2sin"  allowfullscreen="" loading="lazy" style="width: 100%; height: 500px;" referrerpolicy="no-referrer-when-downgrade" frameborder="1"></iframe>
+        </div>
+    </div>
+
+ </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-uppercase mb-4" >Get In Touch</h4>
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="btn-square bg-dark flex-shrink-0 me-3">
+                            <span class="fa fa-map-marker-alt "  style="color: red;"></span>
+                        </div>
+                        <span style="font-weight: bold;color: aqua;font-size: 20px;">3/55 NALIKKAL PATTY, SALEM, INDIA</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="btn-square bg-dark flex-shrink-0 me-3">
+                            <span class="fa fa-phone-alt "  style="color: red;"></span>
+                        </div>
+                        <span style="font-weight: bold;color: aqua;font-size: 20px;">+91 9361536356</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="btn-square bg-dark flex-shrink-0 me-3">
+                            <span class="fa fa-envelope-open "  style="color: red;"></span>
+                        </div>
+                        <span style="font-weight: bold;color: aqua;font-size: 20px;">dilipraja5432@gmail.com</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-uppercase mb-4">Quick Links</h4>
+                    <a class="btn btn-link " href="#" style="font-weight: bold;color: aqua;font-size: 20px;">About Us</a>
+                    <a class="btn btn-link" href="#" style="font-weight: bold;color: aqua;font-size: 20px;">Contact Us</a>
+                    <a class="btn btn-link" href="#" style="font-weight: bold;color: aqua;font-size: 20px;">Our Services</a>
+                    <a class="btn btn-link" href="#" style="font-weight: bold;color: aqua;font-size: 20px;">Terms & Condition</a>
+                    <a class="btn btn-link" href="#" style="font-weight: bold;color:aqua;font-size: 20px;">Support</a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-uppercase mb-4">Newsletter</h4>
+                    <div class="position-relative mb-4">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button id="signin" type="button" class="btn btn-warning py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                    <div class="d-flex pt-1 m-n1">
+                        <a class="btn btn-lg-square btn-dark text-primary m-1" href="#"><i class="fab fa-twitter" style="color: red;"></i></a>
+                        <a class="btn btn-lg-square btn-dark text-primary m-1" href="#"><i class="fab fa-facebook-f"  style="color: red;"></i></a>
+                        <a class="btn btn-lg-square btn-dark text-primary m-1" href="#"><i class="fab fa-youtube"  style="color: red;"></i></a>
+                        <a class="btn btn-lg-square btn-dark text-primary m-1" href="#"><i class="fab fa-linkedin-in"  style="color: red;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#" tyle="font-weight: bold;">Your Site Name</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Designed By <a class="border-bottom"  style="font-weight: bold;">DILIP</a>
+                        <br>Distributed By: <a class="border-bottom" target="_blank" tyle="font-weight: bold;">NAUGHTY BOY</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+
+
+    <!-- JavaScript Libraries -->
+ 
+
+    <!-- Template Javascript -->
+ 
+    <script>
+
+       
+    (function ($) {
+        "use strict";
+    
+        // Spinner
+        var spinner = function () {
+            setTimeout(function () {
+                if ($('#spinner').length > 0) {
+                    $('#spinner').removeClass('show');
+                }
+            }, 1);
+        };
+        spinner();
+        
+        
+        // Initiate the wowjs
+        new WOW().init();
+    
+    
+        // Sticky Navbar
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 300) {
+                $('.sticky-top').addClass('shadow-sm').css('top', '0px');
+            } else {
+                $('.sticky-top').removeClass('shadow-sm').css('top', '-100px');
+            }
+        });
+        
+        
+        // Back to top button
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 300) {
+                $('.back-to-top').fadeIn('slow');
+            } else {
+                $('.back-to-top').fadeOut('slow');
+            }
+        });
+        $('.back-to-top').click(function () {
+            $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+            return false;
+        });
+    
+    
+        // Testimonials carousel
+        $('.testimonial-carousel').owlCarousel({
+            autoplay: true,
+            smartSpeed: 1000,
+            loop: true,
+            nav: false,
+            dots: true,
+            items: 1,
+            dotsData: true,
+        });
+    
+        
+    })(jQuery);
+  
+    
+</script>
+
+</body>
+
+
+<!-- Mirrored from themewagon.github.io/haircut/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 31 Aug 2023 12:38:27 GMT -->
+</html>
